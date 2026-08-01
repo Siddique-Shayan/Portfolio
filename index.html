@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0e14" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Siddique Mohammed Shayan — Backend & AI Engineer</title>
+    <meta
+      name="description"
+      content="Backend & AI engineer building production-grade REST APIs, cloud deployments, and Generative-AI features with Java, Spring Boot, and modern LLM tooling."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon/favicon.svg" />
+    <link rel="canonical" href="https://siddique-shayan.vercel.app" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Anti-flash theme script: applies the persisted theme class before React mounts
+      or the first paint happens, so there's no light/dark flicker on load.
+      Keep this in sync with src/store/themeStore.ts.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = window.localStorage.getItem('portfolio-theme');
+          var theme = stored === 'light' || stored === 'dark'
+            ? stored
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
