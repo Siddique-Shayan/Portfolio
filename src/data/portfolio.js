@@ -8,7 +8,7 @@
  * and update the fields below to keep them in sync.
  */
 
-export const siteUrl = 'https://siddique-shayan.vercel.app'
+export const siteUrl = 'https://appshayu.in'
 
 export const profile = {
   name: 'Shayan Siddique',
