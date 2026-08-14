@@ -56,7 +56,7 @@ export const socialLinks = [
   {
     key: 'linkedin',
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/siddique-mohammed-shayan-395304329',
+    href: 'https://www.linkedin.com/in/siddique-shayan-395304329',
     icon: 'FiLinkedin',
   },
   { key: 'email', label: 'Email', href: `mailto:${profile.email}`, icon: 'FiMail' },
